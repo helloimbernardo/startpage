@@ -19,7 +19,7 @@
 <head>
   <meta charset="UTF-8">
   <title>New Tab</title>
-  
+
   <style>
     @font-face{
       font-family: 'JetBrains Mono';
@@ -28,6 +28,29 @@
       url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf') format('truetype');
       font-weight: 400;
       font-style: normal;
+    }
+
+    .default-colorscheme{
+      --color1: #FDCB6E;
+      --color2: #E17055;
+      --color3: #6C5CE7;
+      --color4: #00CEC9;
+    }
+
+    #dev{
+      color: var(--color1);
+    }
+
+    #fun{
+      color: var(--color2);
+    }
+
+    #tools{
+      color: var(--color3);
+    }
+
+    #school{
+      color: var(--color4);
     }
 
     body{
@@ -41,7 +64,6 @@
     .Cards{
       display: flex;
       padding: 3rem;
-
       margin: 0;
       position: absolute;
       top: 50%;
@@ -88,28 +110,12 @@
     .Card header{
       font-size: 30px;
     }
-
-    #dev{
-      color: #FDCB6E;
-    }
-
-    #fun{
-      color: #E17055;
-    }
-
-    #tools{
-      color: #6C5CE7;
-    }
-
-    #school{
-      color: #00CEC9;
-    }
   </style>
 </head>
 <body>
 
-<!--dev-->
-<section class="Cards">
+<section id="main" class="Cards default-colorscheme">
+  <!--dev-->
   <article class="Card">
     <header>
       <h2 id="dev">dev</h2>
