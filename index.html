@@ -16,44 +16,45 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>New Tab</title>
 
   <style>
-    @font-face{
+    @font-face {
       font-family: 'JetBrains Mono';
       src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
-      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff'),
-      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+        url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf') format('truetype');
       font-weight: 400;
       font-style: normal;
     }
 
-    .default-colorscheme{
+    .default-colorscheme {
       --color1: #FDCB6E;
       --color2: #E17055;
       --color3: #6C5CE7;
       --color4: #00CEC9;
     }
 
-    #dev{
+    #dev {
       color: var(--color1);
     }
 
-    #fun{
+    #fun {
       color: var(--color2);
     }
 
-    #tools{
+    #tools {
       color: var(--color3);
     }
 
-    #school{
+    #school {
       color: var(--color4);
     }
 
-    body{
+    body {
       padding: 0;
       margin: 0;
       background-color: #17141d;
@@ -61,7 +62,7 @@
       font-family: 'JetBrains Mono', monospace;
     }
 
-    .Cards{
+    .Cards {
       display: flex;
       padding: 3rem;
       margin: 0;
@@ -72,7 +73,7 @@
       transform: translate(-50%, -60%);
     }
 
-    .Card{
+    .Card {
       display: flex;
       position: relative;
       flex-direction: column;
@@ -88,72 +89,76 @@
       transition: .2s;
     }
 
-    .Card:hover{
+    .Card:hover {
       transform: translateY(-1rem);
     }
 
-    .Card:hover~.Card{
+    .Card:hover~.Card {
       transform: translateX(130px);
     }
 
-    .Card:not(:first-child){
+    .Card:not(:first-child) {
       margin-left: -130px;
     }
 
-    .Card a:link, a:visited, a:hover{
+    .Card a:link,
+    a:visited,
+    a:hover {
       color: white;
       text-decoration: none;
       line-height: 56px;
       font-size: 28px;
     }
 
-    .Card header{
+    .Card header {
       font-size: 30px;
     }
   </style>
 </head>
+
 <body>
 
-<section id="main" class="Cards default-colorscheme">
-  <!--dev-->
-  <article class="Card">
-    <header>
-      <h2 id="dev">dev</h2>
-    </header>
-    <a target="_top" href="https://github.com/">github</a><br>
-    <a target="_top" href="https://dashboard.heroku.com/">heroku</a><br>
-    <a target="_top" href="https://developer.mozilla.org/en-US/">mdn</a><br>
-  </article>
+  <section id="main" class="Cards default-colorscheme">
+    <!--dev-->
+    <article class="Card">
+      <header>
+        <h2 id="dev">dev</h2>
+      </header>
+      <a target="_top" href="https://github.com/">github</a><br>
+      <a target="_top" href="https://dashboard.heroku.com/">heroku</a><br>
+      <a target="_top" href="https://developer.mozilla.org/en-US/">mdn</a><br>
+    </article>
 
-  <!--fun-->
-  <article class="Card">
-    <header>
-      <h2 id="fun">fun</h2>
-    </header>
-    <a target="_top" href="https://youtube.com/">youtube</a><br>
-    <a target="_top" href="https://instagram.com/">instagram</a><br>
-    <a target="_top" href="https://twitch.tv">twitch</a><br>
-  </article>
+    <!--fun-->
+    <article class="Card">
+      <header>
+        <h2 id="fun">fun</h2>
+      </header>
+      <a target="_top" href="https://youtube.com/">youtube</a><br>
+      <a target="_top" href="https://instagram.com/">instagram</a><br>
+      <a target="_top" href="https://twitch.tv">twitch</a><br>
+    </article>
 
-  <!--tools-->
-  <article class="Card">
-    <header>
-      <h2 id="tools">tools</h2>
-    </header>
-    <a target="_top" href="https://fromsmash.com/">smash</a><br>
-    <a target="_top" href="https://usejournal.com/app/">journal</a><br>
-    <a target="_top" href="https://uigradients.com/">uiGradients</a><br>
-  </article>
+    <!--tools-->
+    <article class="Card">
+      <header>
+        <h2 id="tools">tools</h2>
+      </header>
+      <a target="_top" href="https://fromsmash.com/">smash</a><br>
+      <a target="_top" href="https://usejournal.com/app/">journal</a><br>
+      <a target="_top" href="https://uigradients.com/">uiGradients</a><br>
+    </article>
 
-  <!--school-->
-  <article class="Card">
-    <header>
-      <h2 id="school">school</h2>
-    </header>
-    <a target="_top" href="http://aefcastro.net/moodle20/">moodle</a><br>
-    <a target="_top" href="https://esfcastro.unicard.pt:8080/">kiosk</a><br>
-    <a target="_top" href="https://drive.google.com/drive/folders/1NQUjidrhJoDmyPOJ_oXQkFgfWor_aq5Q">drive</a><br>
-  </article>
-</section>
+    <!--school-->
+    <article class="Card">
+      <header>
+        <h2 id="school">school</h2>
+      </header>
+      <a target="_top" href="http://aefcastro.net/moodle20/">moodle</a><br>
+      <a target="_top" href="https://esfcastro.unicard.pt:8080/">kiosk</a><br>
+      <a target="_top" href="https://drive.google.com/drive/folders/1NQUjidrhJoDmyPOJ_oXQkFgfWor_aq5Q">drive</a><br>
+    </article>
+  </section>
 </body>
+
 </html>
