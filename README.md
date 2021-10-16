@@ -5,7 +5,7 @@
 -->
 
 # Startpage
-by [**bernawastaken**](https://github.com/bernawastaken)
+by [**helloimbernardo**](https://github.com/helloimbernardo)
 
 ---
 ## How to use
